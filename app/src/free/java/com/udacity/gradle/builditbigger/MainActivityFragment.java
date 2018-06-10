@@ -39,7 +39,7 @@ public class MainActivityFragment extends Fragment {
                 "YOUR_ADMOB_APP_ID");
 
         mInterstitialAd = new InterstitialAd(getActivity());
-        mInterstitialAd.setAdUnitId("YOUR_ADD_UNIT_ID");
+        mInterstitialAd.setAdUnitId("YOUR_AD_UNIT_ID");
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
