@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements JokeListener {
     @Override
     public void onJokeLoaded(String joke) {
         Intent showJokeIntent = new Intent(this, ShowJokeActivity.class);
-        showJokeIntent.putExtra("joke_content", joke);
+        showJokeIntent.putExtra(ShowJokeActivity.EXTRA_KEY_JOKE, joke);
         startActivity(showJokeIntent);
         loadingIndicator.setVisibility(View.GONE);
     }
